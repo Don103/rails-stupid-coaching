@@ -1,0 +1,10 @@
+<h1><%=@question %></h1>
+<%if @question == "I am going to work"%>
+  <%="great!"%>
+<% elsif @question.end_with?("?") %>
+  <%="Silly question, get dressed and go to work!"%>
+<% else %>
+  <%="I don't care, get dressed and go to work!"%>
+<% end %>
+
+<%= link_to "ask any question", "ask" %>
